@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">easybus</string>
+    <string name="page_1_description">Manage your public transport subscriptions - only your credit card needed</string>
+    <string name="page_2_description">Add student discounts, fidelity points and more!</string>
+    <string name="page_3_description">Create your profile to enjoy all benefits.</string>
+    <string name="let_s_start">Let\'s start</string>
+    <string name="create_your_profile_title">Create your profile</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last name</string>
+    <string name="cnp">CNP</string>
+    <string name="password">Password</string>
+    <string name="i_m_a_student">I\'m a student</string>
+    <string name="i_m_retired">I\'m retired</string>
+    <string name="next">Next</string>
+    <string name="payment_profile_title">Add payment details</string>
+    <string name="card_number">Card Number</string>
+    <string name="name_on_card">Name on card</string>
+    <string name="expiry_date">Expiry date</string>
+    <string name="vcs_number">VCS number</string>
+    <string name="confirm">Confirm</string>
+    <string name="subscriptions">Subscriptions</string>
+    <string name="profile">Profile</string>
+</resources>

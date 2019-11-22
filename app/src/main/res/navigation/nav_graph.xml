@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/onboarding_fragment">
+
+    <fragment
+        android:id="@+id/onboarding_fragment"
+        android:name="com.example.easybus.onboarding.OnboardingFragment">
+        <action
+            android:id="@+id/onboarding_to_profile"
+            app:destination="@id/profile_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profile_fragment"
+        android:name="com.example.easybus.profile.BaseProfileFragment">
+        <action
+            android:id="@+id/profile_to_payment"
+            app:destination="@+id/payment_profile_fragment" />
+        <action
+            android:id="@+id/profile_to_onboarding"
+            app:destination="@id/onboarding_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/payment_profile_fragment"
+        android:name="com.example.easybus.profile.PaymentProfileFragment">
+        <action
+            android:id="@+id/payment_to_subscriptions"
+            app:destination="@+id/wallet_screen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/wallet_screen"
+        android:name="com.example.easybus.wallet.WalletFragment" />
+
+    <fragment
+        android:id="@+id/subscription_screen"
+        android:name="com.example.easybus.wallet.SubscriptionsFragment" />
+    <fragment
+        android:id="@+id/user_profile_fragment"
+        android:name="com.example.easybus.wallet.ProfileFragment" />
+
+</navigation>

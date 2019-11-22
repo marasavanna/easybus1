@@ -45,9 +45,13 @@ class WalletFragment : Fragment() {
 
     private fun loadFragment(fragment: Fragment) {
         val transaction = fragmentManager?.beginTransaction()
-        transaction?.replace(R.id.layout, fragment)
-        transaction?.addToBackStack(null)
-        transaction?.commit()
+        transaction?.let {
+            with(it){
+                replace(R.id.layout, fragment)
+                addToBackStack(null)
+                commit()
+            }
+        }
     }
 
 }
